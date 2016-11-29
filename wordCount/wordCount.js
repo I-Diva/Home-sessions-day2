@@ -1,11 +1,13 @@
-function wordCount(value) {
-  var words = value.split(" ");
+var app = {
+  wordCount: function(value) {
+    var words = value.split(' ');
 
-  var x = function(counts, word) {
-    counts[word] = (counts[word] || 0) + 1;
-    return counts;
-  };
+    var x = function(counts, word) {
+      counts[word] = (counts[word] || 0) + 1;
+      return counts;
+    };
 
-  return words.reduce(x, {});
+    return words.reduce(x, {});
+  }
 }
-wordCount("olly olly in come free");
+module.exports = app
