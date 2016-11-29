@@ -1,11 +1,27 @@
-function wordCount(value) {
-  var words = value.split(" ");
+var app = {
+  findMinMax: function(numbers) {
+    maximum = numbers[0];
+    minimum = numbers[0];
+    for (i = 0; i <= numbers.length - 1; i++) {
+      if (maximum < numbers[i]) {
+        maximum = numbers[i];
+      }
 
-  var x = function(counts, word) {
-    counts[word] = (counts[word] || 0) + 1;
-    return counts;
-  };
+      // return large;
+    }
+    for (i = 0; i <= numbers.length - 1; i++) {
+      if (minimum > numbers[i]) {
+        minimum = numbers[i];
+      }
+      //  return smallest;
 
-  return words.reduce(x, {});
+    }
+    if (minimum == maximum) {
+      return [minimum];
+    }
+
+    return [minimum, maximum];
+
+  }
 }
-wordCount("olly olly in come free");
+module.exports = app
