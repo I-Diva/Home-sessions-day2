@@ -1,0 +1,19 @@
+{
+  "name": "home-sessions-day2",
+  "version": "1.0.0",
+  "description": "Excercises on functions and Consume API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-Diva/Home-sessions-day2.git"
+  },
+  "author": "Olayemi Awofadeju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I-Diva/Home-sessions-day2/issues"
+  },
+  "homepage": "https://github.com/I-Diva/Home-sessions-day2#readme"
+}
