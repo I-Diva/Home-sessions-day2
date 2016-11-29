@@ -1,6 +1,6 @@
 var app = {
   wordCount: function(value) {
-    var words = value.split(' ');
+    var words = value.replace(/[.]/g, '').split(/\s/);
 
     var x = function(counts, word) {
       counts[word] = (counts[word] || 0) + 1;
